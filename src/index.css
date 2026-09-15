@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Syne", system-ui, sans-serif;
+  --font-label: "Space Grotesk", system-ui, sans-serif;
+
+  /* Primary blue brand scale — deepened for a more editorial, less "SaaS" feel */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #dde5ff;
+  --color-primary-200: #b9c8ff;
+  --color-primary-300: #8ea3ff;
+  --color-primary-400: #5b78f5;
+  --color-primary-500: #3a54e0;
+  --color-primary-600: #24399e;
+  --color-primary-700: #1c2c7d;
+  --color-primary-800: #172363;
+  --color-primary-900: #131b47;
+  --color-primary-950: #0c1130;
+
+  --color-ink-800: #1c1c19;
+  --color-ink-900: #0d0d0c;
+
+  /* Warm paper tone instead of stark white */
+  --color-paper: #f7f5f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Infinite horizontal ticker used by the hero's service marquee. Content is
+   tripled in the markup so the -33.333% loop point is seamless. */
+@keyframes marquee {
+  to {
+    transform: translateX(-33.3333%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
