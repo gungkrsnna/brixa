@@ -1,4 +1,3 @@
-import { Image as ImageIcon } from 'lucide-react'
 import { motion, useMotionTemplate, useReducedMotion, useScroll, useSpring, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { useLocale } from '../../i18n/LocaleContext'
@@ -114,7 +113,10 @@ function About() {
             </motion.p>
           </div>
 
-          {/* Image placeholder — swap for a real team/workspace photo later */}
+          {/* AI-generated workspace photo — stands in for a real team/office
+              photo until one is available. The small accent square reuses
+              the same image at a tighter crop (object-position) rather than
+              a second asset. */}
           <motion.div
             variants={slideFromRight}
             initial="hidden"
@@ -124,11 +126,21 @@ function About() {
             className="relative"
           >
             <motion.div style={prefersReducedMotion ? undefined : { y: yImage }} className="relative">
-              <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-2xl bg-primary-700 shadow-xl shadow-ink-900/10">
-                <ImageIcon size={32} strokeWidth={1.5} className="text-paper/40" />
+              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-primary-700 shadow-xl shadow-ink-900/10">
+                <img
+                  src="/images/about-workspace.webp"
+                  alt=""
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              <div className="absolute -bottom-6 -left-6 hidden h-24 w-24 items-center justify-center overflow-hidden rounded-2xl bg-ink-900 shadow-lg shadow-ink-900/10 sm:flex">
-                <ImageIcon size={18} strokeWidth={1.5} className="text-paper/30" />
+              <div className="absolute -bottom-6 -left-6 hidden h-24 w-24 overflow-hidden rounded-2xl shadow-lg shadow-ink-900/10 sm:block">
+                <img
+                  src="/images/about-workspace.webp"
+                  alt=""
+                  className="h-full w-full object-cover object-[85%_75%]"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           </motion.div>

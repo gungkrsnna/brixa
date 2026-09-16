@@ -1,4 +1,4 @@
-import { ArrowUpRight, Image as ImageIcon } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import {
   AnimatePresence,
   motion,
@@ -16,6 +16,16 @@ import { LOCALES, useLocale } from '../../i18n/LocaleContext'
 // the values glide/settle toward the scroll position instead of tracking it
 // 1:1, which is what gives scroll-linked motion that softer, physical feel.
 const FOCUS_SPRING = { stiffness: 120, damping: 20, mass: 0.4 }
+
+// AI-generated mockups standing in for real project screenshots, keyed by
+// slug rather than stored in the locale data since the asset is the same
+// regardless of language.
+const SERVICE_IMAGES = {
+  'company-profile': '/images/service-company-profile.webp',
+  ecommerce: '/images/service-ecommerce.webp',
+  'web-app': '/images/service-webapp.webp',
+  'mobile-app': '/images/service-mobile-app.webp',
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -150,12 +160,28 @@ function Services() {
 
           {/* Preview panel — image + description swap together to match
               whichever service is hovered. Height matches the list column
-              exactly (grid stretch), so no more mismatched/awkward sizing. */}
+              exactly (grid stretch), so no more mismatched/awkward sizing.
+              The mockup images have a flat white background, so they sit on
+              a paper-coloured card rather than directly on the accent
+              colour, which would otherwise show as a clashing white box. */}
           <div className="hidden h-full lg:block">
             <div
               className={`relative flex h-full flex-col justify-between overflow-hidden rounded-2xl p-6 shadow-xl shadow-ink-900/10 transition-colors duration-500 ${services[active].accent}`}
             >
-              <ImageIcon size={32} strokeWidth={1.5} className="text-paper/40" />
+              <div className="relative overflow-hidden rounded-xl bg-paper shadow-lg shadow-ink-900/20">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={active}
+                    src={SERVICE_IMAGES[services[active].slug]}
+                    alt=""
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                    className="h-40 w-full object-contain p-3"
+                  />
+                </AnimatePresence>
+              </div>
 
               <div className="relative">
                 <AnimatePresence mode="wait">
