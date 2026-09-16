@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { LOCALES, useLocale } from '../../i18n/LocaleContext'
 
 // A visible ID/EN segmented toggle — both options always shown, active one
@@ -31,17 +31,34 @@ function LanguageToggle({ locale, className = '' }) {
 
 function Navbar() {
   const { t, locale } = useLocale()
+  const location = useLocation()
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [hovered, setHovered] = useState(null)
+  const [activeSection, setActiveSection] = useState('home')
+  const homePath = LOCALES[locale].path
 
+  // Prefixed with the locale's home path (not a bare hash) so these links
+  // still resolve correctly from pages other than the homepage, e.g. a
+  // service detail page.
   const navLinks = [
-    { label: t.nav.home, href: '#home' },
-    { label: t.nav.services, href: '#services' },
-    { label: t.nav.portfolio, href: '#portfolio' },
-    { label: t.nav.about, href: '#about' },
-    { label: t.nav.contact, href: '#contact' },
+    { id: 'home', label: t.nav.home, href: `${homePath}#home` },
+    { id: 'services', label: t.nav.services, href: `${homePath}#services` },
+    { id: 'portfolio', label: t.nav.portfolio, href: `${homePath}#portfolio` },
+    { id: 'about', label: t.nav.about, href: `${homePath}#about` },
+    { id: 'contact', label: t.nav.contact, href: `${homePath}#contact` },
   ]
+
+  // On a detail page (no in-page sections to scrollspy) the relevant nav
+  // item is still knowable from the URL — e.g. any /layanan/:slug route
+  // means "Services" is the active item. On the homepage itself this is
+  // null and the scroll-based activeSection below takes over instead.
+  const routeActiveId = location.pathname.startsWith(LOCALES[locale].servicesPath)
+    ? 'services'
+    : location.pathname.startsWith(LOCALES[locale].portfolioPath)
+      ? 'portfolio'
+      : null
+  const activeId = routeActiveId ?? activeSection
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 20)
@@ -49,6 +66,32 @@ function Navbar() {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  // Scrollspy: whichever section crosses the horizontal midline of the
+  // viewport becomes active. Only the homepage has these section ids in
+  // the DOM, so this is a no-op (and harmless) on detail pages.
+  useEffect(() => {
+    const sections = navLinks
+      .map((link) => document.getElementById(link.id))
+      .filter(Boolean)
+
+    if (sections.length === 0) return undefined
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      { rootMargin: '-50% 0px -50% 0px', threshold: 0 },
+    )
+
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname])
 
   return (
     <header
@@ -62,7 +105,7 @@ function Navbar() {
         }`}
       >
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-ink-900">
+        <a href={`${homePath}#home`} className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-ink-900">
           <motion.span
             whileHover={{ rotate: 135 }}
             transition={{ type: 'spring', stiffness: 260, damping: 16 }}
@@ -73,25 +116,39 @@ function Navbar() {
           Brixa
         </a>
 
-        {/* Desktop nav — sliding hover indicator */}
+        {/* Desktop nav — sliding hover indicator + a persistent underline
+            that tracks whichever section/page is currently active */}
         <ul onMouseLeave={() => setHovered(null)} className="hidden items-center gap-1 md:flex">
-          {navLinks.map((link, i) => (
-            <li key={link.href} className="relative" onMouseEnter={() => setHovered(i)}>
-              {hovered === i && (
-                <motion.span
-                  layoutId="nav-hover-pill"
-                  className="absolute inset-0 rounded-full bg-ink-900/[0.06]"
-                  transition={{ type: 'spring', stiffness: 400, damping: 32 }}
-                />
-              )}
-              <a
-                href={link.href}
-                className="relative z-10 block px-4 py-2 font-label text-[13px] font-medium uppercase tracking-[0.12em] text-ink-900/70 transition-colors hover:text-ink-900"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map((link, i) => {
+            const isActive = link.id === activeId
+            return (
+              <li key={link.href} className="relative" onMouseEnter={() => setHovered(i)}>
+                {hovered === i && (
+                  <motion.span
+                    layoutId="nav-hover-pill"
+                    className="absolute inset-0 rounded-full bg-ink-900/[0.06]"
+                    transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                  />
+                )}
+                <a
+                  href={link.href}
+                  aria-current={isActive ? 'true' : undefined}
+                  className={`relative z-10 block px-4 py-2 font-label text-[13px] font-medium uppercase tracking-[0.12em] transition-colors hover:text-ink-900 ${
+                    isActive ? 'text-ink-900' : 'text-ink-900/70'
+                  }`}
+                >
+                  {link.label}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-active-underline"
+                      className="absolute inset-x-4 -bottom-0.5 h-[2px] rounded-full bg-primary-600"
+                      transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                    />
+                  )}
+                </a>
+              </li>
+            )
+          })}
         </ul>
 
         <div className="hidden items-center md:flex">
@@ -123,17 +180,24 @@ function Navbar() {
             className="overflow-hidden bg-paper md:hidden"
           >
             <ul className="flex flex-col gap-1 px-6 pt-2 pb-6">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={() => setIsOpen(false)}
-                    className="block border-b border-ink-900/10 py-3 font-label text-sm font-medium uppercase tracking-[0.12em] text-ink-900/80"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = link.id === activeId
+                return (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      onClick={() => setIsOpen(false)}
+                      aria-current={isActive ? 'true' : undefined}
+                      className={`flex items-center justify-between border-b border-ink-900/10 py-3 font-label text-sm font-medium uppercase tracking-[0.12em] ${
+                        isActive ? 'text-ink-900' : 'text-ink-900/80'
+                      }`}
+                    >
+                      {link.label}
+                      {isActive && <span className="h-1.5 w-1.5 rounded-full bg-primary-600" />}
+                    </a>
+                  </li>
+                )
+              })}
             </ul>
           </motion.div>
         )}

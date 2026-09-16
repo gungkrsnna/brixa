@@ -9,7 +9,8 @@ import {
   useTransform,
 } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { useLocale } from '../../i18n/LocaleContext'
+import { Link } from 'react-router-dom'
+import { LOCALES, useLocale } from '../../i18n/LocaleContext'
 
 // Shared spring config for the focus (blur/fade/scale) transitions — makes
 // the values glide/settle toward the scroll position instead of tracking it
@@ -26,8 +27,9 @@ const fadeUp = {
 }
 
 function Services() {
-  const { t } = useLocale()
+  const { t, locale } = useLocale()
   const services = t.services.items
+  const servicesPath = LOCALES[locale].servicesPath
   const [active, setActive] = useState(0)
   const sectionRef = useRef(null)
   const prefersReducedMotion = useReducedMotion()
@@ -120,7 +122,10 @@ function Services() {
                 onMouseEnter={() => setActive(i)}
                 className="group relative border-b border-ink-900/10"
               >
-                <a href="#contact" className="relative flex items-center gap-6 py-8 md:gap-10 md:py-10">
+                <Link
+                  to={`${servicesPath}/${service.slug}`}
+                  className="relative flex items-center gap-6 py-8 md:gap-10 md:py-10"
+                >
                   <span
                     className="absolute inset-y-0 -inset-x-6 -z-10 origin-left scale-x-0 bg-ink-900/[0.03] transition-transform duration-500 ease-out group-hover:scale-x-100"
                     aria-hidden="true"
@@ -138,7 +143,7 @@ function Services() {
                     size={24}
                     className="shrink-0 text-ink-900/30 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-primary-600"
                   />
-                </a>
+                </Link>
               </motion.div>
             ))}
           </motion.div>

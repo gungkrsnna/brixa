@@ -3,8 +3,8 @@ import id from './locales/id'
 import en from './locales/en'
 
 export const LOCALES = {
-  id: { code: 'id', label: 'ID', path: '/', dictionary: id },
-  en: { code: 'en', label: 'EN', path: '/en', dictionary: en },
+  id: { code: 'id', label: 'ID', path: '/', servicesPath: '/layanan', portfolioPath: '/portfolio', dictionary: id },
+  en: { code: 'en', label: 'EN', path: '/en', servicesPath: '/en/services', portfolioPath: '/en/portfolio', dictionary: en },
 }
 
 const LocaleContext = createContext(null)

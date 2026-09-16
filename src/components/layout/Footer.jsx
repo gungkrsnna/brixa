@@ -1,15 +1,19 @@
 import { ArrowUp } from 'lucide-react'
-import { useLocale } from '../../i18n/LocaleContext'
+import { LOCALES, useLocale } from '../../i18n/LocaleContext'
 import { EMAIL, WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from '../../constants/contact'
 
 function Footer() {
-  const { t } = useLocale()
+  const { t, locale } = useLocale()
+  const homePath = LOCALES[locale].path
+
+  // Prefixed with the locale's home path so these still resolve correctly
+  // from pages other than the homepage, e.g. a service detail page.
   const navLinks = [
-    { label: t.nav.home, href: '#home' },
-    { label: t.nav.services, href: '#services' },
-    { label: t.nav.portfolio, href: '#portfolio' },
-    { label: t.nav.about, href: '#about' },
-    { label: t.nav.contact, href: '#contact' },
+    { label: t.nav.home, href: `${homePath}#home` },
+    { label: t.nav.services, href: `${homePath}#services` },
+    { label: t.nav.portfolio, href: `${homePath}#portfolio` },
+    { label: t.nav.about, href: `${homePath}#about` },
+    { label: t.nav.contact, href: `${homePath}#contact` },
   ]
 
   return (
@@ -18,7 +22,7 @@ function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr] md:gap-8">
           {/* Brand */}
           <div>
-            <a href="#home" className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-paper">
+            <a href={`${homePath}#home`} className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-paper">
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-500 text-sm font-bold text-paper">
                 B
               </span>
@@ -77,7 +81,7 @@ function Footer() {
           </span>
 
           <a
-            href="#home"
+            href={`${homePath}#home`}
             className="group flex items-center gap-2 font-label text-xs uppercase tracking-[0.15em] text-paper/40 transition-colors duration-300 hover:text-paper"
           >
             {t.footer.backToTop}
