@@ -28,7 +28,7 @@ const fadeUp = {
 // to read as prominent, not like filler.
 const CLIENTS = [
   { src: '/images/bankaruna.webp', alt: 'BPR Aruna' },
-  { src: '/images/PEMKAB%20BADUNG.webp', alt: 'Pemerintah Kabupaten Badung' },
+  { src: '/images/logo-itb-stikom-bali.webp', alt: 'Institut Teknologi dan Bisnis STIKOM Bali' },
   {
     src: '/images/Group%202.webp',
     alt: 'Pusat Unggulan Ipteks Perguruan Tinggi, Universitas Udayana, dan Center for Public Health Innovation',
