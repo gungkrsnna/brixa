@@ -1,6 +1,6 @@
 export default {
   meta: {
-    title: 'Brixa — Website & App Development Studio',
+    title: 'Brixa | Website & App Development Studio',
     description:
       'Brixa is a website & app development studio: company profile sites, online stores, web systems, and mobile apps. Custom-built, fast, and tailored to your business.',
   },
@@ -21,7 +21,7 @@ export default {
     headlinePrefix: 'Websites & apps, built with ',
     headlineHighlight: 'precision.',
     paragraph:
-      'Brixa designs and builds digital products with a careful approach — every detail considered, every line of code with a purpose. No templates, no shortcuts.',
+      'Brixa designs and builds digital products with a careful approach. Every detail considered, every line of code with a purpose. No templates, no shortcuts.',
     ctaPrimary: 'Start a Project',
     ctaSecondary: 'View Portfolio',
     marquee: [
@@ -41,7 +41,7 @@ export default {
     headingPrefix: 'Services we ',
     headingHighlight: 'take care of.',
     description:
-      'Four areas where Brixa most often helps clients — from simple company profile pages to complex custom systems.',
+      'Four areas where Brixa most often helps clients, from simple company profile pages to complex custom systems.',
     items: [
       {
         slug: 'company-profile',
@@ -51,7 +51,7 @@ export default {
         accent: 'bg-primary-600',
         detail: {
           intro:
-            'A corporate website designed to build trust from the first visit — business profile, services, and portfolio laid out neatly in one place.',
+            'A corporate website designed to build trust from the first visit: business profile, services, and portfolio laid out neatly in one place.',
           features: [
             'Custom design matched to your brand identity, not a template',
             'Fully responsive across desktop, tablet, and mobile',
@@ -68,7 +68,7 @@ export default {
         accent: 'bg-ink-900',
         detail: {
           intro:
-            'A complete online selling platform — from product catalog to checkout — built so customers shop easily and you manage stock and orders just as easily.',
+            'A complete online selling platform, from product catalog to checkout, built so customers shop easily and you manage stock and orders just as easily.',
           features: [
             'Product catalog with categories, variants, and search',
             'Streamlined shopping cart and checkout flow',
@@ -85,7 +85,7 @@ export default {
         accent: 'bg-primary-800',
         detail: {
           intro:
-            'A dashboard or internal system built custom around your business workflow — not generic software forced to fit.',
+            'A dashboard or internal system built custom around your business workflow, not generic software forced to fit.',
           features: [
             'Workflow analysis to design features that are actually useful',
             'Data, user, and access management tailored to your needs',
@@ -98,7 +98,7 @@ export default {
         slug: 'mobile-app',
         title: 'Mobile App',
         description:
-          'Android & iOS apps — native or cross-platform, from concept through to store release.',
+          'Android & iOS apps, native or cross-platform, from concept through to store release.',
         accent: 'bg-primary-500',
         detail: {
           intro:
@@ -131,7 +131,7 @@ export default {
     headingPrefix: 'The kind of projects we ',
     headingHighlight: 'usually build.',
     description:
-      'The examples below illustrate our work categories — they’ll be replaced with real case studies and project links over time.',
+      'Some of the project categories we work on most often, from company profile landing pages to complex custom systems.',
     items: [
       {
         slug: 'company-profile-website',
@@ -141,7 +141,7 @@ export default {
         cover: 'profile',
         detail: {
           intro:
-            'Example case study: a company profile landing page with clear navigation, a hero that communicates the value proposition within seconds, and fast loading across every device.',
+            'A company profile landing page with clear navigation, a hero that communicates the value proposition within seconds, and fast loading across every device.',
           highlights: [
             'Hero design with dual CTAs (primary & secondary) for maximum conversion',
             'Client logo strip to build trust from the first scroll',
@@ -158,7 +158,7 @@ export default {
         cover: 'commerce',
         detail: {
           intro:
-            'Example case study: an online selling system with an easy-to-browse product catalog, a short checkout flow, and a consistent look across desktop and mobile.',
+            'An online selling system with an easy-to-browse product catalog, a short checkout flow, and a consistent look across desktop and mobile.',
           highlights: [
             'Product grid with prominent promo/discount indicators',
             'Search & category filters for navigating a large catalog',
@@ -175,7 +175,7 @@ export default {
         cover: 'system',
         detail: {
           intro:
-            'Example case study: an internal dashboard for monitoring operational data in real time, with visualizations that make decisions easier.',
+            'An internal dashboard for monitoring operational data in real time, with visualizations that make decisions easier.',
           highlights: [
             'Stat cards surfacing key metrics at a glance',
             'Chart visualizations to track trends over time',
@@ -192,7 +192,7 @@ export default {
         cover: 'mobile',
         detail: {
           intro:
-            'Example case study: a cross-platform booking app with a simple flow, from picking a schedule to confirmation.',
+            'A cross-platform booking app with a simple flow, from picking a schedule to confirmation.',
           highlights: [
             'A visual calendar/schedule for quickly picking a date',
             'A clear booking list showing the status of each order',
@@ -206,7 +206,6 @@ export default {
 
   portfolioDetail: {
     eyebrow: 'Portfolio',
-    exampleNotice: 'Example case study — will be replaced with a real project over time.',
     backLabel: 'Back to home',
     highlightsLabel: 'What was built',
     otherProjectsLabel: 'Other projects',
@@ -227,7 +226,7 @@ export default {
       {
         title: 'Custom, not templated',
         description:
-          'Every line of code is written for your specific needs — not a modified template already used by hundreds of others.',
+          'Every line of code is written for your specific needs, not a modified template already used by hundreds of others.',
       },
       {
         title: 'Transparent communication',
@@ -237,7 +236,7 @@ export default {
       {
         title: 'Flexible for any need',
         description:
-          'From simple company profiles to complex systems — we adapt our approach to your business needs, not the other way around.',
+          'From simple company profiles to complex systems, we adapt our approach to your business needs, not the other way around.',
       },
     ],
   },
@@ -266,7 +265,7 @@ export default {
   },
 
   footer: {
-    tagline: 'Website & app development studio — built with precision, no templates.',
+    tagline: 'Website & app development studio. Built with precision, no templates.',
     navLabel: 'Navigation',
     contactLabel: 'Contact',
     backToTop: 'Back to top',

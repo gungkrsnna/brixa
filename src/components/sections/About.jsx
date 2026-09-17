@@ -134,7 +134,7 @@ function About() {
                   loading="lazy"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 hidden h-24 w-24 overflow-hidden rounded-2xl shadow-lg shadow-ink-900/10 sm:block">
+              <div className="absolute -bottom-6 -left-6 hidden h-24 w-24 overflow-hidden rounded-2xl shadow-lg shadow-ink-900/10 md:block">
                 <img
                   src="/images/about-workspace.webp"
                   alt=""

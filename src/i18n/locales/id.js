@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Brixa — Jasa Pembuatan Website & Aplikasi',
+    title: 'Brixa | Jasa Pembuatan Website & Aplikasi',
     description:
-      'Brixa — studio pengembangan website & aplikasi: company profile, toko online, sistem web, hingga aplikasi mobile. Custom, cepat, sesuai kebutuhan bisnis Anda.',
+      'Brixa adalah studio pengembangan website & aplikasi: company profile, toko online, sistem web, hingga aplikasi mobile. Custom, cepat, sesuai kebutuhan bisnis Anda.',
   },
 
   nav: {
@@ -21,7 +21,7 @@ export default {
     headlinePrefix: 'Website & aplikasi, dirancang dengan ',
     headlineHighlight: 'presisi.',
     paragraph:
-      'Brixa merancang dan membangun produk digital dengan pendekatan yang cermat — setiap detail dipertimbangkan, setiap baris kode punya tujuan. Tanpa template, tanpa jalan pintas.',
+      'Brixa merancang dan membangun produk digital dengan pendekatan yang cermat. Setiap detail dipertimbangkan, setiap baris kode punya tujuan. Tanpa template, tanpa jalan pintas.',
     ctaPrimary: 'Mulai Proyek',
     ctaSecondary: 'Lihat Portofolio',
     marquee: [
@@ -41,7 +41,7 @@ export default {
     headingPrefix: 'Layanan yang ',
     headingHighlight: 'kami kerjakan.',
     description:
-      'Empat area utama tempat Brixa paling sering membantu klien — dari halaman company profile sederhana sampai sistem custom yang kompleks.',
+      'Empat area utama tempat Brixa paling sering membantu klien, dari halaman company profile sederhana sampai sistem custom yang kompleks.',
     items: [
       {
         slug: 'company-profile',
@@ -51,7 +51,7 @@ export default {
         accent: 'bg-primary-600',
         detail: {
           intro:
-            'Website perusahaan yang dirancang untuk membangun kepercayaan sejak detik pertama dikunjungi — profil bisnis, layanan, dan portofolio tersaji rapi dalam satu tempat.',
+            'Website perusahaan yang dirancang untuk membangun kepercayaan sejak detik pertama dikunjungi: profil bisnis, layanan, dan portofolio tersaji rapi dalam satu tempat.',
           features: [
             'Desain custom sesuai identitas brand, bukan template',
             'Responsif penuh di desktop, tablet, dan mobile',
@@ -68,7 +68,7 @@ export default {
         accent: 'bg-ink-900',
         detail: {
           intro:
-            'Platform jualan online lengkap — dari katalog produk sampai proses checkout — dibangun agar pelanggan mudah belanja dan Anda mudah kelola stok maupun pesanan.',
+            'Platform jualan online lengkap, dari katalog produk sampai proses checkout, dibangun agar pelanggan mudah belanja dan Anda mudah kelola stok maupun pesanan.',
           features: [
             'Katalog produk dengan kategori, varian, dan pencarian',
             'Keranjang belanja dan proses checkout yang ringkas',
@@ -85,7 +85,7 @@ export default {
         accent: 'bg-primary-800',
         detail: {
           intro:
-            'Dashboard atau sistem internal yang dibangun custom mengikuti alur kerja bisnis Anda — bukan software generik yang dipaksakan cocok.',
+            'Dashboard atau sistem internal yang dibangun custom mengikuti alur kerja bisnis Anda, bukan software generik yang dipaksakan cocok.',
           features: [
             'Analisis alur kerja untuk merancang fitur yang tepat guna',
             'Manajemen data, pengguna, dan hak akses sesuai kebutuhan',
@@ -98,7 +98,7 @@ export default {
         slug: 'mobile-app',
         title: 'Aplikasi Mobile',
         description:
-          'Aplikasi Android & iOS — native atau cross-platform, dari konsep hingga rilis ke store.',
+          'Aplikasi Android & iOS, native atau cross-platform, dari konsep hingga rilis ke store.',
         accent: 'bg-primary-500',
         detail: {
           intro:
@@ -131,7 +131,7 @@ export default {
     headingPrefix: 'Jenis proyek yang ',
     headingHighlight: 'biasa kami kerjakan.',
     description:
-      'Contoh di bawah menggambarkan kategori pekerjaan kami — akan diperbarui dengan studi kasus dan tautan proyek nyata seiring berjalannya waktu.',
+      'Beberapa kategori proyek yang paling sering kami kerjakan, dari landing page company profile sampai sistem custom yang kompleks.',
     items: [
       {
         slug: 'company-profile-website',
@@ -141,7 +141,7 @@ export default {
         cover: 'profile',
         detail: {
           intro:
-            'Contoh studi kasus: landing page company profile dengan navigasi jelas, hero yang mengomunikasikan value proposition dalam hitungan detik, dan performa loading yang cepat di semua perangkat.',
+            'Landing page company profile dengan navigasi jelas, hero yang mengomunikasikan value proposition dalam hitungan detik, dan performa loading yang cepat di semua perangkat.',
           highlights: [
             'Desain hero dengan CTA ganda (utama & sekunder) untuk konversi maksimal',
             'Strip logo klien untuk membangun kepercayaan sejak awal',
@@ -158,7 +158,7 @@ export default {
         cover: 'commerce',
         detail: {
           intro:
-            'Contoh studi kasus: sistem jualan online dengan katalog produk yang mudah dijelajahi, proses checkout singkat, dan tampilan yang konsisten di desktop maupun mobile.',
+            'Sistem jualan online dengan katalog produk yang mudah dijelajahi, proses checkout singkat, dan tampilan yang konsisten di desktop maupun mobile.',
           highlights: [
             'Grid produk dengan indikator promo/diskon yang menonjol',
             'Pencarian & filter kategori untuk navigasi katalog besar',
@@ -175,7 +175,7 @@ export default {
         cover: 'system',
         detail: {
           intro:
-            'Contoh studi kasus: dashboard internal untuk memantau data operasional secara real-time, lengkap dengan visualisasi yang memudahkan pengambilan keputusan.',
+            'Dashboard internal untuk memantau data operasional secara real-time, lengkap dengan visualisasi yang memudahkan pengambilan keputusan.',
           highlights: [
             'Kartu ringkasan (stat cards) untuk metrik penting di satu pandangan',
             'Visualisasi grafik untuk memantau tren dari waktu ke waktu',
@@ -192,7 +192,7 @@ export default {
         cover: 'mobile',
         detail: {
           intro:
-            'Contoh studi kasus: aplikasi pemesanan lintas platform dengan alur booking yang sederhana, dari memilih jadwal sampai konfirmasi.',
+            'Aplikasi pemesanan lintas platform dengan alur booking yang sederhana, dari memilih jadwal sampai konfirmasi.',
           highlights: [
             'Kalender/jadwal visual untuk memilih tanggal dengan cepat',
             'Daftar pesanan yang jelas menunjukkan status tiap booking',
@@ -206,7 +206,6 @@ export default {
 
   portfolioDetail: {
     eyebrow: 'Portofolio',
-    exampleNotice: 'Studi kasus contoh — akan diperbarui dengan proyek nyata seiring berjalannya waktu.',
     backLabel: 'Kembali ke beranda',
     highlightsLabel: 'Yang dikerjakan',
     otherProjectsLabel: 'Proyek lainnya',
@@ -227,7 +226,7 @@ export default {
       {
         title: 'Custom, bukan template',
         description:
-          'Setiap baris kode ditulis untuk kebutuhan spesifik Anda — bukan hasil modifikasi template yang sudah dipakai ratusan orang lain.',
+          'Setiap baris kode ditulis untuk kebutuhan spesifik Anda, bukan hasil modifikasi template yang sudah dipakai ratusan orang lain.',
       },
       {
         title: 'Komunikasi yang transparan',
@@ -237,7 +236,7 @@ export default {
       {
         title: 'Fleksibel untuk kebutuhan apa pun',
         description:
-          'Dari company profile sederhana sampai sistem kompleks — kami menyesuaikan pendekatan dengan kebutuhan bisnis Anda, bukan sebaliknya.',
+          'Dari company profile sederhana sampai sistem kompleks, kami menyesuaikan pendekatan dengan kebutuhan bisnis Anda, bukan sebaliknya.',
       },
     ],
   },
@@ -266,7 +265,7 @@ export default {
   },
 
   footer: {
-    tagline: 'Studio pengembangan website & aplikasi — dirancang dengan presisi, dibangun tanpa template.',
+    tagline: 'Studio pengembangan website & aplikasi. Dirancang dengan presisi, dibangun tanpa template.',
     navLabel: 'Navigasi',
     contactLabel: 'Kontak',
     backToTop: 'Kembali ke atas',

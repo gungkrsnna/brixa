@@ -36,7 +36,7 @@ function PortfolioDetail() {
   return (
     <>
       <SiteHead
-        title={`${project.title} — Brixa`}
+        title={`${project.title} | Brixa`}
         description={project.detail.intro}
         path={`${portfolioPath}/${slug}`}
         alternatePaths={{ id: `${LOCALES.id.portfolioPath}/${slug}`, en: `${LOCALES.en.portfolioPath}/${slug}` }}
@@ -75,16 +75,6 @@ function PortfolioDetail() {
                 initial="hidden"
                 animate="show"
                 custom={0.13}
-                className="mt-4 text-sm italic leading-relaxed text-ink-900/45"
-              >
-                {t.portfolioDetail.exampleNotice}
-              </motion.p>
-
-              <motion.p
-                variants={fadeUp}
-                initial="hidden"
-                animate="show"
-                custom={0.16}
                 className="mt-4 text-base leading-relaxed text-ink-900/70 md:text-lg"
               >
                 {project.detail.intro}

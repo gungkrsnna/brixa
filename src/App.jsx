@@ -31,15 +31,35 @@ function ScrollManager() {
   useEffect(() => {
     if (navigationType === 'POP') return
 
-    if (hash) {
-      const target = document.getElementById(hash.slice(1))
-      if (target) {
-        target.scrollIntoView()
-        return
-      }
-    }
+    // Deferred two animation frames out: this component sits above
+    // <Routes>, so its effect runs before the sections it's jumping to
+    // have mounted and subscribed their own scroll listeners (each
+    // section's scroll-linked fade/blur is driven by Framer Motion's
+    // useScroll, which recomputes only on a 'scroll' event). Jumping
+    // synchronously here fires that event before those listeners exist,
+    // so they miss it and stay stuck at their initial (invisible) value —
+    // the section renders with its cards/content permanently faded out
+    // until the user scrolls again. Waiting two frames lets every
+    // just-mounted component's effects — including those listeners —
+    // attach first.
+    let raf2 = 0
+    const raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => {
+        if (hash) {
+          const target = document.getElementById(hash.slice(1))
+          if (target) {
+            target.scrollIntoView()
+            return
+          }
+        }
+        window.scrollTo(0, 0)
+      })
+    })
 
-    window.scrollTo(0, 0)
+    return () => {
+      cancelAnimationFrame(raf1)
+      cancelAnimationFrame(raf2)
+    }
   }, [pathname, hash, navigationType])
 
   return null
