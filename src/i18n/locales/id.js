@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Brixa | Jasa Pembuatan Website & Aplikasi',
+    title: 'Bali Pro Dev | Jasa Pembuatan Website & Aplikasi',
     description:
-      'Brixa adalah studio pengembangan website & aplikasi: company profile, toko online, sistem web, hingga aplikasi mobile. Custom, cepat, sesuai kebutuhan bisnis Anda.',
+      'Bali Pro Dev adalah studio pengembangan website & aplikasi: company profile, toko online, sistem web, hingga aplikasi mobile. Custom, cepat, sesuai kebutuhan bisnis Anda.',
   },
 
   nav: {
@@ -21,7 +21,7 @@ export default {
     headlinePrefix: 'Website & aplikasi, dirancang dengan ',
     headlineHighlight: 'presisi.',
     paragraph:
-      'Brixa merancang dan membangun produk digital dengan pendekatan yang cermat. Setiap detail dipertimbangkan, setiap baris kode punya tujuan. Tanpa template, tanpa jalan pintas.',
+      'Bali Pro Dev merancang dan membangun produk digital dengan pendekatan yang cermat. Setiap detail dipertimbangkan, setiap baris kode punya tujuan. Tanpa template, tanpa jalan pintas.',
     ctaPrimary: 'Mulai Proyek',
     ctaSecondary: 'Lihat Portofolio',
     marquee: [
@@ -41,7 +41,7 @@ export default {
     headingPrefix: 'Layanan yang ',
     headingHighlight: 'kami kerjakan.',
     description:
-      'Empat area utama tempat Brixa paling sering membantu klien, dari halaman company profile sederhana sampai sistem custom yang kompleks.',
+      'Empat area utama tempat Bali Pro Dev paling sering membantu klien, dari halaman company profile sederhana sampai sistem custom yang kompleks.',
     items: [
       {
         slug: 'company-profile',
@@ -221,7 +221,7 @@ export default {
     headingPrefix: 'Kami percaya detail kecil ',
     headingHighlight: 'membuat perbedaan besar.',
     paragraph:
-      'Brixa adalah studio pengembangan digital yang fokus pada kualitas, bukan kuantitas. Setiap proyek yang masuk kami kerjakan dengan pendekatan yang sama: dengarkan kebutuhan Anda, rancang solusi yang tepat, lalu bangun dengan kode yang bersih dan siap dikembangkan lebih jauh.',
+      'Bali Pro Dev adalah studio pengembangan digital yang fokus pada kualitas, bukan kuantitas. Setiap proyek yang masuk kami kerjakan dengan pendekatan yang sama: dengarkan kebutuhan Anda, rancang solusi yang tepat, lalu bangun dengan kode yang bersih dan siap dikembangkan lebih jauh.',
     principles: [
       {
         title: 'Custom, bukan template',
@@ -258,7 +258,7 @@ export default {
       submit: 'Kirim Pesan',
     },
     mailSubjectPrefix: 'Proyek baru dari',
-    mailFallbackName: 'website Brixa',
+    mailFallbackName: 'website Bali Pro Dev',
     mailBodyName: 'Nama',
     mailBodyEmail: 'Email',
     mailBodyMessage: 'Pesan',

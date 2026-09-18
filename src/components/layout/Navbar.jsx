@@ -106,14 +106,16 @@ function Navbar() {
       >
         {/* Logo */}
         <a href={`${homePath}#home`} className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-ink-900">
-          <motion.span
+          <motion.img
+            src="/logo.png"
+            alt=""
+            width="36"
+            height="36"
             whileHover={{ rotate: 135 }}
             transition={{ type: 'spring', stiffness: 260, damping: 16 }}
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-600 text-sm font-bold text-paper"
-          >
-            B
-          </motion.span>
-          Brixa
+            className="h-9 w-9"
+          />
+          Bali Pro Dev
         </a>
 
         {/* Desktop nav — sliding hover indicator + a persistent underline

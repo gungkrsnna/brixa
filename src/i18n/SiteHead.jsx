@@ -1,8 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { LOCALES, useLocale } from './LocaleContext'
 
-// TODO: ganti dengan domain asli setelah deploy.
-const SITE_URL = 'https://brixa.id'
+const SITE_URL = 'https://baliprodev.com'
 
 // For a sub-page (not the homepage), pass `path` (this locale's URL) and
 // `alternatePaths` ({ id, en }, the equivalent URL in each locale) so
@@ -29,7 +28,7 @@ function SiteHead({ title, description, path, alternatePaths } = {}) {
       <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${idPath}`} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Brixa" />
+      <meta property="og:site_name" content="Bali Pro Dev" />
       <meta property="og:locale" content={locale === 'id' ? 'id_ID' : 'en_US'} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />

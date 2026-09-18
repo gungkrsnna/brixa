@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Brixa | Website & App Development Studio',
+    title: 'Bali Pro Dev | Website & App Development Studio',
     description:
-      'Brixa is a website & app development studio: company profile sites, online stores, web systems, and mobile apps. Custom-built, fast, and tailored to your business.',
+      'Bali Pro Dev is a website & app development studio: company profile sites, online stores, web systems, and mobile apps. Custom-built, fast, and tailored to your business.',
   },
 
   nav: {
@@ -21,7 +21,7 @@ export default {
     headlinePrefix: 'Websites & apps, built with ',
     headlineHighlight: 'precision.',
     paragraph:
-      'Brixa designs and builds digital products with a careful approach. Every detail considered, every line of code with a purpose. No templates, no shortcuts.',
+      'Bali Pro Dev designs and builds digital products with a careful approach. Every detail considered, every line of code with a purpose. No templates, no shortcuts.',
     ctaPrimary: 'Start a Project',
     ctaSecondary: 'View Portfolio',
     marquee: [
@@ -41,7 +41,7 @@ export default {
     headingPrefix: 'Services we ',
     headingHighlight: 'take care of.',
     description:
-      'Four areas where Brixa most often helps clients, from simple company profile pages to complex custom systems.',
+      'Four areas where Bali Pro Dev most often helps clients, from simple company profile pages to complex custom systems.',
     items: [
       {
         slug: 'company-profile',
@@ -221,7 +221,7 @@ export default {
     headingPrefix: 'We believe small details ',
     headingHighlight: 'make a big difference.',
     paragraph:
-      'Brixa is a digital development studio focused on quality, not quantity. Every project we take on gets the same approach: listen to your needs, design the right solution, then build it with clean code that’s ready to grow further.',
+      'Bali Pro Dev is a digital development studio focused on quality, not quantity. Every project we take on gets the same approach: listen to your needs, design the right solution, then build it with clean code that’s ready to grow further.',
     principles: [
       {
         title: 'Custom, not templated',
@@ -258,7 +258,7 @@ export default {
       submit: 'Send Message',
     },
     mailSubjectPrefix: 'New project from',
-    mailFallbackName: 'Brixa website',
+    mailFallbackName: 'Bali Pro Dev website',
     mailBodyName: 'Name',
     mailBodyEmail: 'Email',
     mailBodyMessage: 'Message',

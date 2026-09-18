@@ -3,138 +3,156 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://brixa.id/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://brixa.id/" />
+    <loc>https://baliprodev.com/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baliprodev.com/" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://brixa.id/en</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://brixa.id/" />
+    <loc>https://baliprodev.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baliprodev.com/" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://brixa.id/layanan/company-profile</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/company-profile" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/company-profile" />
+    <loc>https://baliprodev.com/layanan/company-profile</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/company-profile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/company-profile" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://brixa.id/en/services/company-profile</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/company-profile" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/company-profile" />
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://brixa.id/layanan/ecommerce</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/ecommerce" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/ecommerce" />
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://brixa.id/en/services/ecommerce</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/ecommerce" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/ecommerce" />
+    <loc>https://baliprodev.com/en/services/company-profile</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/company-profile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/company-profile" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://brixa.id/layanan/web-app</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/web-app" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/web-app" />
+    <loc>https://baliprodev.com/layanan/ecommerce</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/ecommerce" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://brixa.id/en/services/web-app</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/web-app" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/web-app" />
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://brixa.id/layanan/mobile-app</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/mobile-app" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/mobile-app" />
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://brixa.id/en/services/mobile-app</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/layanan/mobile-app" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/services/mobile-app" />
+    <loc>https://baliprodev.com/en/services/ecommerce</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/ecommerce" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://brixa.id/portfolio/company-profile-website</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/company-profile-website" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/company-profile-website" />
+    <loc>https://baliprodev.com/layanan/web-app</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/web-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/web-app" />
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://baliprodev.com/en/services/web-app</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/web-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/web-app" />
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://baliprodev.com/layanan/mobile-app</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/mobile-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/mobile-app" />
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://baliprodev.com/en/services/mobile-app</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/layanan/mobile-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/services/mobile-app" />
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://baliprodev.com/portfolio/company-profile-website</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/company-profile-website" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/company-profile-website" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://brixa.id/en/portfolio/company-profile-website</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/company-profile-website" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/company-profile-website" />
+    <loc>https://baliprodev.com/en/portfolio/company-profile-website</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/company-profile-website" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/company-profile-website" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://brixa.id/portfolio/ecommerce-platform</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/ecommerce-platform" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/ecommerce-platform" />
+    <loc>https://baliprodev.com/portfolio/ecommerce-platform</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/ecommerce-platform" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/ecommerce-platform" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://brixa.id/en/portfolio/ecommerce-platform</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/ecommerce-platform" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/ecommerce-platform" />
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://brixa.id/portfolio/internal-dashboard</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/internal-dashboard" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/internal-dashboard" />
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://brixa.id/en/portfolio/internal-dashboard</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/internal-dashboard" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/internal-dashboard" />
+    <loc>https://baliprodev.com/en/portfolio/ecommerce-platform</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/ecommerce-platform" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/ecommerce-platform" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://brixa.id/portfolio/mobile-booking-app</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/mobile-booking-app" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/mobile-booking-app" />
+    <loc>https://baliprodev.com/portfolio/internal-dashboard</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/internal-dashboard" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/internal-dashboard" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://brixa.id/en/portfolio/mobile-booking-app</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://brixa.id/portfolio/mobile-booking-app" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://brixa.id/en/portfolio/mobile-booking-app" />
+    <loc>https://baliprodev.com/en/portfolio/internal-dashboard</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/internal-dashboard" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/internal-dashboard" />
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://baliprodev.com/portfolio/mobile-booking-app</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/mobile-booking-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/mobile-booking-app" />
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://baliprodev.com/en/portfolio/mobile-booking-app</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baliprodev.com/portfolio/mobile-booking-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baliprodev.com/en/portfolio/mobile-booking-app" />
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

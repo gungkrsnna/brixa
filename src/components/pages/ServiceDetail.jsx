@@ -34,7 +34,7 @@ function ServiceDetail() {
   return (
     <>
       <SiteHead
-        title={`${service.title} | Brixa`}
+        title={`${service.title} | Bali Pro Dev`}
         description={service.detail.intro}
         path={`${servicesPath}/${slug}`}
         alternatePaths={{ id: `${LOCALES.id.servicesPath}/${slug}`, en: `${LOCALES.en.servicesPath}/${slug}` }}

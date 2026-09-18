@@ -23,10 +23,8 @@ function Footer() {
           {/* Brand */}
           <div>
             <a href={`${homePath}#home`} className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-paper">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-500 text-sm font-bold text-paper">
-                B
-              </span>
-              Brixa
+              <img src="/logo.png" alt="" className="h-9 w-9" width="36" height="36" />
+              Bali Pro Dev
             </a>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-paper/50">{t.footer.tagline}</p>
           </div>
@@ -77,7 +75,7 @@ function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 flex flex-col-reverse items-center justify-between gap-6 border-t border-paper/10 pt-8 md:flex-row">
           <span className="font-label text-xs uppercase tracking-[0.15em] text-paper/40">
-            © {new Date().getFullYear()} Brixa. {t.footer.copyright}
+            © {new Date().getFullYear()} Bali Pro Dev. {t.footer.copyright}
           </span>
 
           <a
@@ -97,7 +95,7 @@ function Footer() {
         aria-hidden="true"
         className="pointer-events-none mt-16 block select-none text-center font-display text-[16vw] font-bold leading-none text-paper/[0.04]"
       >
-        BRIXA
+        BALI PRO DEV
       </span>
     </footer>
   )

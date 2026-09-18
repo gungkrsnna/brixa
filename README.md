@@ -1,6 +1,6 @@
-# Brixa — Company Profile Website
+# Bali Pro Dev — Company Profile Website
 
-Website company profile untuk **Brixa**, jasa pengembangan website & aplikasi. Dibangun dengan React + Vite, bergaya *elegant brutalism* (tipografi tegas, border tipis, animasi scroll berbasis fokus/blur), dan sudah mendukung multi-bahasa (Indonesia & Inggris).
+Website company profile untuk **Bali Pro Dev**, jasa pengembangan website & aplikasi. Dibangun dengan React + Vite, bergaya *elegant brutalism* (tipografi tegas, border tipis, animasi scroll berbasis fokus/blur), dan sudah mendukung multi-bahasa (Indonesia & Inggris).
 
 ## Tech Stack
 

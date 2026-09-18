@@ -36,7 +36,7 @@ function PortfolioDetail() {
   return (
     <>
       <SiteHead
-        title={`${project.title} | Brixa`}
+        title={`${project.title} | Bali Pro Dev`}
         description={project.detail.intro}
         path={`${portfolioPath}/${slug}`}
         alternatePaths={{ id: `${LOCALES.id.portfolioPath}/${slug}`, en: `${LOCALES.en.portfolioPath}/${slug}` }}
