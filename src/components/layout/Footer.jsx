@@ -1,6 +1,7 @@
 import { ArrowUp } from 'lucide-react'
 import { LOCALES, useLocale } from '../../i18n/LocaleContext'
 import { EMAIL, WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from '../../constants/contact'
+import { handleSectionLinkClick } from '../../utils/scrollToSection'
 
 function Footer() {
   const { t, locale } = useLocale()
@@ -22,7 +23,11 @@ function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr] md:gap-8">
           {/* Brand */}
           <div>
-            <a href={`${homePath}#home`} className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-paper">
+            <a
+              href={`${homePath}#home`}
+              onClick={(e) => handleSectionLinkClick(e, `${homePath}#home`)}
+              className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-paper"
+            >
               <img src="/logo.png" alt="" className="h-9 w-9" width="36" height="36" />
               Bali Pro Dev
             </a>
@@ -37,6 +42,7 @@ function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
+                    onClick={(e) => handleSectionLinkClick(e, link.href)}
                     className="text-sm text-paper/70 transition-colors duration-300 hover:text-paper"
                   >
                     {link.label}
@@ -80,6 +86,7 @@ function Footer() {
 
           <a
             href={`${homePath}#home`}
+            onClick={(e) => handleSectionLinkClick(e, `${homePath}#home`)}
             className="group flex items-center gap-2 font-label text-xs uppercase tracking-[0.15em] text-paper/40 transition-colors duration-300 hover:text-paper"
           >
             {t.footer.backToTop}

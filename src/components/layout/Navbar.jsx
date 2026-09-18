@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { LOCALES, useLocale } from '../../i18n/LocaleContext'
+import { handleSectionLinkClick } from '../../utils/scrollToSection'
+import PromoBanner from './PromoBanner'
 
 // A visible ID/EN segmented toggle — both options always shown, active one
 // highlighted, so it reads as a real language switch rather than a single
@@ -44,6 +46,7 @@ function Navbar() {
   const navLinks = [
     { id: 'home', label: t.nav.home, href: `${homePath}#home` },
     { id: 'services', label: t.nav.services, href: `${homePath}#services` },
+    { id: 'promo', label: t.nav.promo, href: `${homePath}#promo` },
     { id: 'portfolio', label: t.nav.portfolio, href: `${homePath}#portfolio` },
     { id: 'about', label: t.nav.about, href: `${homePath}#about` },
     { id: 'contact', label: t.nav.contact, href: `${homePath}#contact` },
@@ -99,13 +102,19 @@ function Navbar() {
         isScrolled ? 'bg-paper/90 shadow-[0_1px_0_0_rgba(13,13,12,0.08)] backdrop-blur-md' : 'bg-transparent'
       }`}
     >
+      <PromoBanner />
+
       <nav
         className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-[height] duration-300 ${
           isScrolled ? 'h-16' : 'h-20'
         }`}
       >
         {/* Logo */}
-        <a href={`${homePath}#home`} className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-ink-900">
+        <a
+          href={`${homePath}#home`}
+          onClick={(e) => handleSectionLinkClick(e, `${homePath}#home`)}
+          className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight text-ink-900"
+        >
           <motion.img
             src="/logo.png"
             alt=""
@@ -134,6 +143,7 @@ function Navbar() {
                 )}
                 <a
                   href={link.href}
+                  onClick={(e) => handleSectionLinkClick(e, link.href)}
                   aria-current={isActive ? 'true' : undefined}
                   className={`relative z-10 block px-4 py-2 font-label text-[13px] font-medium uppercase tracking-[0.12em] transition-colors hover:text-ink-900 ${
                     isActive ? 'text-ink-900' : 'text-ink-900/70'
@@ -188,7 +198,10 @@ function Navbar() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      onClick={() => setIsOpen(false)}
+                      onClick={(e) => {
+                        handleSectionLinkClick(e, link.href)
+                        setIsOpen(false)
+                      }}
                       aria-current={isActive ? 'true' : undefined}
                       className={`flex items-center justify-between border-b border-ink-900/10 py-3 font-label text-sm font-medium uppercase tracking-[0.12em] ${
                         isActive ? 'text-ink-900' : 'text-ink-900/80'

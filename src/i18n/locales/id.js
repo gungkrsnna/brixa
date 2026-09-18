@@ -8,6 +8,7 @@ export default {
   nav: {
     home: 'Beranda',
     services: 'Layanan',
+    promo: 'Promo',
     portfolio: 'Portofolio',
     about: 'Tentang',
     contact: 'Kontak',
@@ -112,6 +113,31 @@ export default {
         },
       },
     ],
+  },
+
+  promo: {
+    eyebrow: 'Promo Terbatas',
+    headingPrefix: 'Baru mau punya website sendiri? ',
+    headingHighlight: 'Ini paketnya.',
+    description:
+      'Paket hemat untuk yang baru mulai: landing page custom, domain, dan hosting, semua sudah termasuk dalam satu harga.',
+    features: [
+      '1 landing page custom, desain sesuai brand Anda',
+      'Domain .online aktif 1 tahun',
+      'Hosting 1 tahun, siap pakai',
+      'Terhubung ke WhatsApp untuk leads masuk langsung',
+    ],
+    cardLabel: 'Paket UMKM',
+    price: 'Rp 800.000',
+    pricePeriod: '/tahun',
+    cardNote: 'Sudah termasuk domain & hosting 1 tahun. Tinggal isi kebutuhan Anda, kami yang kerjakan.',
+    ctaLabel: 'Klaim Promo Ini',
+    waMessage: 'Halo, saya tertarik dengan promo landing page + domain & hosting Rp 800rb/tahun dari Bali Pro Dev.',
+    finePrintPrefix: 'Butuh lebih dari 1 halaman?',
+    finePrintLink: 'Lihat layanan lainnya.',
+    bannerText: 'Promo: landing page + domain & hosting 1 tahun cuma Rp 800rb.',
+    bannerCta: 'Lihat Promo',
+    bannerDismiss: 'Tutup',
   },
 
   serviceDetail: {

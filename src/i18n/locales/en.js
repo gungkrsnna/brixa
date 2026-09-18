@@ -8,6 +8,7 @@ export default {
   nav: {
     home: 'Home',
     services: 'Services',
+    promo: 'Promo',
     portfolio: 'Portfolio',
     about: 'About',
     contact: 'Contact',
@@ -112,6 +113,31 @@ export default {
         },
       },
     ],
+  },
+
+  promo: {
+    eyebrow: 'Limited Offer',
+    headingPrefix: 'Just need your first website? ',
+    headingHighlight: 'Here’s the package.',
+    description:
+      'A budget-friendly package to get started: a custom landing page, domain, and hosting, all included in one price.',
+    features: [
+      'One custom landing page, designed around your brand',
+      '.online domain, active for 1 year',
+      '1 year of hosting, ready to go',
+      'Connected to WhatsApp so leads reach you directly',
+    ],
+    cardLabel: 'SME Package',
+    price: 'IDR 800,000',
+    pricePeriod: '/year',
+    cardNote: 'Domain & 1-year hosting included. Just tell us what you need and we’ll build it.',
+    ctaLabel: 'Claim This Offer',
+    waMessage: 'Hi, I’m interested in the landing page + domain & hosting promo (IDR 800,000/year) from Bali Pro Dev.',
+    finePrintPrefix: 'Need more than one page?',
+    finePrintLink: 'See our other services.',
+    bannerText: 'Promo: landing page + domain & hosting for 1 year, only IDR 800,000.',
+    bannerCta: 'See Offer',
+    bannerDismiss: 'Dismiss',
   },
 
   serviceDetail: {

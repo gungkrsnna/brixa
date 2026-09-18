@@ -2,6 +2,7 @@ import { ArrowRight, Code2, Smartphone } from 'lucide-react'
 import { motion, useMotionTemplate, useReducedMotion, useScroll, useSpring, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { useLocale } from '../../i18n/LocaleContext'
+import { handleSectionLinkClick } from '../../utils/scrollToSection'
 
 // Shared spring config for the focus (blur/fade/scale) transitions — makes
 // the values glide/settle toward the scroll position instead of tracking it
@@ -121,6 +122,7 @@ function Hero() {
         >
           <a
             href="#contact"
+            onClick={(e) => handleSectionLinkClick(e, '#contact')}
             className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-ink-900 px-7 py-3.5 font-label text-[13px] font-medium uppercase tracking-[0.12em] text-paper"
           >
             <span className="absolute inset-0 -translate-x-full bg-primary-600 transition-transform duration-300 ease-out group-hover:translate-x-0" />
@@ -129,6 +131,7 @@ function Hero() {
           </a>
           <a
             href="#portfolio"
+            onClick={(e) => handleSectionLinkClick(e, '#portfolio')}
             className="group inline-flex items-center justify-center gap-2 rounded-full border border-ink-900/25 px-7 py-3.5 font-label text-[13px] font-medium uppercase tracking-[0.12em] text-ink-900 transition-colors duration-300 hover:border-ink-900 hover:bg-ink-900/[0.04]"
           >
             {t.hero.ctaSecondary}
